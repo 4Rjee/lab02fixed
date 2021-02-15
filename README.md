@@ -167,189 +167,173 @@ investigation:
 	- experiment: 
 		number: 1
 		input_data:
-			buffer_size: 32KB
+			buffer_size: 64KB
 		results:
-			duration: 1.08ms
+			duration: 2.185ms
 	- experiment: 
 		number: 2
 		input_data:
-			buffer_size: 64KB
+			buffer_size: 128KB
 		results:
-			duration: 2.341ms
+			duration: 4.611ms
 	- experiment: 
 		number: 3
 		input_data:
-			buffer_size: 128KB
+			buffer_size: 256KB
 		results:
-			duration: 4.668ms
+			duration: 8.915ms
 	- experiment: 
 		number: 4
 		input_data:
-			buffer_size: 256KB
+			buffer_size: 512KB
 		results:
-			duration: 9.06ms
+			duration: 16.918ms
 	- experiment: 
 		number: 5
 		input_data:
-			buffer_size: 512KB
+			buffer_size: 1024KB
 		results:
-			duration: 16.482ms
+			duration: 33.799ms
 	- experiment: 
 		number: 6
 		input_data:
-			buffer_size: 1024KB
+			buffer_size: 2048KB
 		results:
-			duration: 36.489ms
+			duration: 65.62ms
 	- experiment: 
 		number: 7
 		input_data:
-			buffer_size: 2048KB
+			buffer_size: 4096KB
 		results:
-			duration: 67.26ms
+			duration: 133.043ms
 	- experiment: 
 		number: 8
 		input_data:
-			buffer_size: 4096KB
+			buffer_size: 8192KB
 		results:
-			duration: 140.331ms
+			duration: 255.146ms
 	- experiment: 
 		number: 9
 		input_data:
-			buffer_size: 8192KB
+			buffer_size: 12288KB
 		results:
-			duration: 252.084ms
-	- experiment: 
-		number: 10
-		input_data:
-			buffer_size: 9216KB
-		results:
-			duration: 289.634ms
+			duration: 383.166ms
 investigation:
 	travel_order: reverse
 	experiments:
 	- experiment: 
 		number: 1
 		input_data:
-			buffer_size: 32KB
+			buffer_size: 64KB
 		results:
-			duration: 0.936ms
+			duration: 1.768ms
 	- experiment: 
 		number: 2
 		input_data:
-			buffer_size: 64KB
+			buffer_size: 128KB
 		results:
-			duration: 1.817ms
+			duration: 3.682ms
 	- experiment: 
 		number: 3
 		input_data:
-			buffer_size: 128KB
+			buffer_size: 256KB
 		results:
-			duration: 3.738ms
+			duration: 7.33ms
 	- experiment: 
 		number: 4
 		input_data:
-			buffer_size: 256KB
+			buffer_size: 512KB
 		results:
-			duration: 7.585ms
+			duration: 15.075ms
 	- experiment: 
 		number: 5
 		input_data:
-			buffer_size: 512KB
+			buffer_size: 1024KB
 		results:
-			duration: 14.91ms
+			duration: 29.509ms
 	- experiment: 
 		number: 6
 		input_data:
-			buffer_size: 1024KB
+			buffer_size: 2048KB
 		results:
-			duration: 29.979ms
+			duration: 58.534ms
 	- experiment: 
 		number: 7
 		input_data:
-			buffer_size: 2048KB
+			buffer_size: 4096KB
 		results:
-			duration: 59.399ms
+			duration: 120.02ms
 	- experiment: 
 		number: 8
 		input_data:
-			buffer_size: 4096KB
+			buffer_size: 8192KB
 		results:
-			duration: 118.792ms
+			duration: 234.316ms
 	- experiment: 
 		number: 9
 		input_data:
-			buffer_size: 8192KB
+			buffer_size: 12288KB
 		results:
-			duration: 234.365ms
-	- experiment: 
-		number: 10
-		input_data:
-			buffer_size: 9216KB
-		results:
-			duration: 266.216ms
+			duration: 349.853ms
 investigation:
 	travel_order: random
 	experiments:
 	- experiment: 
 		number: 1
 		input_data:
-			buffer_size: 32KB
+			buffer_size: 64KB
 		results:
-			duration: 4.014ms
+			duration: 8.949ms
 	- experiment: 
 		number: 2
 		input_data:
-			buffer_size: 64KB
+			buffer_size: 128KB
 		results:
-			duration: 8.88ms
+			duration: 16.931ms
 	- experiment: 
 		number: 3
 		input_data:
-			buffer_size: 128KB
+			buffer_size: 256KB
 		results:
-			duration: 16.987ms
+			duration: 34.222ms
 	- experiment: 
 		number: 4
 		input_data:
-			buffer_size: 256KB
+			buffer_size: 512KB
 		results:
-			duration: 32.942ms
+			duration: 69.269ms
 	- experiment: 
 		number: 5
 		input_data:
-			buffer_size: 512KB
+			buffer_size: 1024KB
 		results:
-			duration: 69.278ms
+			duration: 145.404ms
 	- experiment: 
 		number: 6
 		input_data:
-			buffer_size: 1024KB
+			buffer_size: 2048KB
 		results:
-			duration: 146.854ms
+			duration: 309.768ms
 	- experiment: 
 		number: 7
 		input_data:
-			buffer_size: 2048KB
+			buffer_size: 4096KB
 		results:
-			duration: 311.655ms
+			duration: 661.23ms
 	- experiment: 
 		number: 8
 		input_data:
-			buffer_size: 4096KB
+			buffer_size: 8192KB
 		results:
-			duration: 634.547ms
+			duration: 1465.66ms
 	- experiment: 
 		number: 9
 		input_data:
-			buffer_size: 8192KB
+			buffer_size: 12288KB
 		results:
-			duration: 1362.69ms
-	- experiment: 
-		number: 10
-		input_data:
-			buffer_size: 9216KB
-		results:
-			duration: 1618.86ms
+			duration: 2432.8ms
+
+
 ````
 
 
