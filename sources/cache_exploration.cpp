@@ -65,7 +65,8 @@ void cache_exploration::random_travel() {
   travel_variant = "random";
   int k;
   if (!travel_time.empty()) {
-    travel_time.clear();cache_exploration::cache_exploration() {
+    travel_time.clear(); 
+  }
   for (size_t i = 1.0 / 2 * cache_size[0]; i < 3.0 / 2 * cache_size[2];
        i *= 2) {
     buffer_size.push_back(i);
