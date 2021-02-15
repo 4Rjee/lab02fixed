@@ -21,8 +21,8 @@ class cache_exploration {
 
  private:
   std::string travel_variant;
-  const std::vector<size_t> cache_size = {64 * Kilobyte, 256 * Kilobyte,
-                                          6144 * Kilobyte};
+  const std::vector<size_t> cache_size = {128 * Kilobyte, 1024 * Kilobyte,
+                                          8192 * Kilobyte};
   std::vector<size_t> buffer_size;
   std::vector<double> travel_time;
 };
