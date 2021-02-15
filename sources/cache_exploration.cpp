@@ -3,8 +3,8 @@
 #include "cache_exploration.hpp"
 #include <algorithm>
 #include <random>
-const size_t Sixteen = 16;
-const size_t One_thousand = 1000;
+const size_t bytes = 16;
+const size_t iterations = 1000;
 
 cache_exploration::cache_exploration() {
   for (size_t i = 1.0 / 2 * cache_size[0]; i < 3.0 / 2 * cache_size[2];
@@ -21,18 +21,18 @@ void cache_exploration::direct_travel() {
   }
   for (const size_t& i : buffer_size) {
     int* arr = new int[i / 4];
-    for (size_t j = 0; j < i / 4; j += Sixteen) {
+    for (size_t j = 0; j < i / 4; j += bytes) {
       k = arr[j];
     }
     clock_t start_travel = clock();
-    for (size_t n = 0; n < One_thousand; ++n) {
-      for (size_t j = 0; j < i / 4; j += Sixteen) {
+    for (size_t n = 0; n < iterations; ++n) {
+      for (size_t j = 0; j < i / 4; j += bytes) {
         k = arr[j];
       }
     }
     clock_t end_travel = clock();
     travel_time.push_back(static_cast<double>(end_travel - start_travel) /
-                          CLOCKS_PER_SEC * One_thousand);
+                          CLOCKS_PER_SEC * iterations);
     delete[] arr;
     ++k;
   }
@@ -45,18 +45,18 @@ void cache_exploration::reverse_travel() {
   }
   for (const size_t& i : buffer_size) {
     int* arr = new int[i / 4];
-    for (size_t j = i / 4; j > 0; j -= Sixteen) {
+    for (size_t j = i / 4; j > 0; j -= bytes) {
       k = arr[j - 1];
     }
     clock_t start_travel = clock();
-    for (size_t n = 0; n < One_thousand; ++n) {
-      for (size_t j = i / 4; j > 0; j -= Sixteen) {
+    for (size_t n = 0; n < iterations; ++n) {
+      for (size_t j = i / 4; j > 0; j -= bytes) {
         k = arr[j - 1];
       }
     }
     clock_t end_travel = clock();
     travel_time.push_back(static_cast<double>(end_travel - start_travel) /
-                          CLOCKS_PER_SEC * One_thousand);
+                          CLOCKS_PER_SEC * iterations);
     delete[] arr;
     ++k;
   }
@@ -70,7 +70,7 @@ void cache_exploration::random_travel() {
     for (const size_t& i : buffer_size) {
         std::vector<size_t> rand_values;
         int* arr = new int[i / 4];
-        for (size_t j = 0; j < i / 4; j += Sixteen) {
+        for (size_t j = 0; j < i / 4; j += bytes) {
             k = arr[j];
             rand_values.push_back(j);
         }
@@ -78,14 +78,14 @@ void cache_exploration::random_travel() {
         std::mt19937 rnd(rd());
         std::shuffle(rand_values.begin(), rand_values.end(), rnd);
         clock_t start_travel = clock();
-        for (size_t n = 0; n < One_thousand; ++n) {
+        for (size_t n = 0; n < iterations; ++n) {
             for (const auto& index : rand_values) {
                 k = arr[index];
             }
         }
         clock_t end_travel = clock();
         travel_time.push_back(static_cast<double>(end_travel - start_travel) /
-                              CLOCKS_PER_SEC * One_thousand);
+                              CLOCKS_PER_SEC * iterations);
         delete[] arr;
         ++k;
     }
