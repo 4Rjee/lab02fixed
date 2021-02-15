@@ -62,40 +62,33 @@ void cache_exploration::reverse_travel() {
   }
 }
 void cache_exploration::random_travel() {
-  travel_variant = "random";
-  int k;
-  if (!travel_time.empty()) {
-    travel_time.clear(); 
-  }
-  for (size_t i = 1.0 / 2 * cache_size[0]; i < 3.0 / 2 * cache_size[2];
-       i *= 2) {
-    buffer_size.push_back(i);
-  }
-  buffer_size.push_back(3.0 / 2 * cache_size[2]);
-}
-  }
-  for (const size_t& i : buffer_size) {
-    std::vector<size_t> rand_values;
-    int* arr = new int[i / 4];
-    for (size_t j = 0; j < i / 4; j += Sixteen) {
-      k = arr[j];
-      rand_values.push_back(j);
+    travel_variant = "random";
+    int k;
+    if (!travel_time.empty()) {
+        travel_time.clear();
     }
-    std::random_device rd;
-    std::mt19937 rnd(rd());
-    std::shuffle(rand_values.begin(), rand_values.end(), rnd);
-    clock_t start_travel = clock();
-    for (size_t n = 0; n < One_thousand; ++n) {
-      for (const auto& index : rand_values) {
-        k = arr[index];
-      }
+    for (const size_t& i : buffer_size) {
+        std::vector<size_t> rand_values;
+        int* arr = new int[i / 4];
+        for (size_t j = 0; j < i / 4; j += Sixteen) {
+            k = arr[j];
+            rand_values.push_back(j);
+        }
+        std::random_device rd;
+        std::mt19937 rnd(rd());
+        std::shuffle(rand_values.begin(), rand_values.end(), rnd);
+        clock_t start_travel = clock();
+        for (size_t n = 0; n < One_thousand; ++n) {
+            for (const auto& index : rand_values) {
+                k = arr[index];
+            }
+        }
+        clock_t end_travel = clock();
+        travel_time.push_back(static_cast<double>(end_travel - start_travel) /
+                              CLOCKS_PER_SEC * One_thousand);
+        delete[] arr;
+        ++k;
     }
-    clock_t end_travel = clock();
-    travel_time.push_back(static_cast<double>(end_travel - start_travel) /
-                          CLOCKS_PER_SEC * One_thousand);
-    delete[] arr;
-    ++k;
-  }
 }
 std::ostream& operator<<(std::ostream& out, const cache_exploration& c) {
   out << "investigation:\n"
