@@ -162,193 +162,196 @@ investigation:                                       |  investigation:
 Результаты
 ````
 investigation:
-travel_order: direct
-experiments:
-- experiment:
-number: 1
-input_data:
-buffer_size: 32KB
-results:
-duration: 1.094ms
-- experiment:
-number: 2
-input_data:
-buffer_size: 64KB
-results:
-duration: 2.26ms
-- experiment:
-number: 3
-input_data:
-buffer_size: 128KB
-results:
-duration: 4.748ms
-- experiment:
-number: 4
-input_data:
-buffer_size: 256KB
-results:
-duration: 8.806ms
-- experiment:
-number: 5
-input_data:
-buffer_size: 512KB
-results:
-duration: 17.038ms
-- experiment:
-number: 6
-input_data:
-buffer_size: 1024KB
-results:
-duration: 33.201ms
-- experiment:
-number: 7
-buffer_size: 2048KB
-results:
-duration: 67.233ms
-- experiment:
-number: 8
-input_data:
-buffer_size: 4096KB
-results:
-duration: 132.974ms
-- experiment:
-number: 9
-input_data:
-buffer_size: 8192KB
-results:
-duration: 256.518ms
-- experiment:
-number: 10
-input_data:
-buffer_size: 9216KB
-results:
-duration: 293.025ms
+	travel_order: direct
+	experiments:
+	- experiment: 
+		number: 1
+		input_data:
+			buffer_size: 32KB
+		results:
+			duration: 1.08ms
+	- experiment: 
+		number: 2
+		input_data:
+			buffer_size: 64KB
+		results:
+			duration: 2.341ms
+	- experiment: 
+		number: 3
+		input_data:
+			buffer_size: 128KB
+		results:
+			duration: 4.668ms
+	- experiment: 
+		number: 4
+		input_data:
+			buffer_size: 256KB
+		results:
+			duration: 9.06ms
+	- experiment: 
+		number: 5
+		input_data:
+			buffer_size: 512KB
+		results:
+			duration: 16.482ms
+	- experiment: 
+		number: 6
+		input_data:
+			buffer_size: 1024KB
+		results:
+			duration: 36.489ms
+	- experiment: 
+		number: 7
+		input_data:
+			buffer_size: 2048KB
+		results:
+			duration: 67.26ms
+	- experiment: 
+		number: 8
+		input_data:
+			buffer_size: 4096KB
+		results:
+			duration: 140.331ms
+	- experiment: 
+		number: 9
+		input_data:
+			buffer_size: 8192KB
+		results:
+			duration: 252.084ms
+	- experiment: 
+		number: 10
+		input_data:
+			buffer_size: 9216KB
+		results:
+			duration: 289.634ms
 investigation:
-travel_order: reverse
-experiments:
-- experiment:
-number: 1
-input_data:
-buffer_size: 32KB
-results:
-duration: 0.929ms
-- experiment:
-number: 2
-input_data:
-buffer_size: 64KB
-results:
-duration: 2.061ms
-- experiment:
-number: 3
-input_data:
-buffer_size: 128KB
-results:
-duration: 4.075ms
-- experiment:
-number: 4
-input_data:
-buffer_size: 256KB
-results:
-duration: 7.326ms
-- experiment:
-number: 5
-input_data:
-buffer_size: 512KB
-results:
-duration: 15.325ms
-- experiment:
-number: 6
-input_data:
-buffer_size: 1024KB
-results:
-duration: 30.018ms
-- experiment:
-number: 7
-input_data:
-buffer_size: 2048KB
-results:
-duration: 60.324ms
-- experiment:
-number: 8
-input_data:
-buffer_size: 4096KB
-results:
-duration: 121.578ms
-- experiment:
-number: 9
-input_data:
-buffer_size: 8192KB
-results:
-duration: 241.45ms
-- experiment:
-number: 10
-input_data:
-buffer_size: 9216KB
-results:
-duration: 271.76ms
+	travel_order: reverse
+	experiments:
+	- experiment: 
+		number: 1
+		input_data:
+			buffer_size: 32KB
+		results:
+			duration: 0.936ms
+	- experiment: 
+		number: 2
+		input_data:
+			buffer_size: 64KB
+		results:
+			duration: 1.817ms
+	- experiment: 
+		number: 3
+		input_data:
+			buffer_size: 128KB
+		results:
+			duration: 3.738ms
+	- experiment: 
+		number: 4
+		input_data:
+			buffer_size: 256KB
+		results:
+			duration: 7.585ms
+	- experiment: 
+		number: 5
+		input_data:
+			buffer_size: 512KB
+		results:
+			duration: 14.91ms
+	- experiment: 
+		number: 6
+		input_data:
+			buffer_size: 1024KB
+		results:
+			duration: 29.979ms
+	- experiment: 
+		number: 7
+		input_data:
+			buffer_size: 2048KB
+		results:
+			duration: 59.399ms
+	- experiment: 
+		number: 8
+		input_data:
+			buffer_size: 4096KB
+		results:
+			duration: 118.792ms
+	- experiment: 
+		number: 9
+		input_data:
+			buffer_size: 8192KB
+		results:
+			duration: 234.365ms
+	- experiment: 
+		number: 10
+		input_data:
+			buffer_size: 9216KB
+		results:
+			duration: 266.216ms
 investigation:
-travel_order: random
-experiments:
-- experiment:
-number: 1
-input_data:
-buffer_size: 32KB
-results:
-duration: 4.103ms
-- experiment:
-number: 2
-input_data:
-buffer_size: 64KB
-results:
-duration: 8.783ms
-- experiment:
-number: 3
-input_data:
-buffer_size: 128KB
-results:
-duration: 17.202ms
-- experiment:
-number: 4
-input_data:
-buffer_size: 256KB
-results:
-duration: 34.445ms
-- experiment:
-number: 5
-input_data:
-buffer_size: 512KB
-results:
-duration: 73.926ms
-- experiment:
-number: 6
-input_data:
-buffer_size: 1024KB
-results:
-duration: 155.63ms
-- experiment:
-number: 7
-input_data:
-buffer_size: 2048KB
-results:
-duration: 338.536ms
-- experiment:
-number: 8
-input_data:
-buffer_size: 4096KB
-results:
-duration: 733.278ms
-- experiment:
-number: 9
-input_data:
-buffer_size: 8192KB
-results:
-duration: 1634.93ms
-- experiment:
-number: 10
-input_data:
-buffer_size: 9216KB
-results:
-duration: 2178.81ms
+	travel_order: random
+	experiments:
+	- experiment: 
+		number: 1
+		input_data:
+			buffer_size: 32KB
+		results:
+			duration: 4.014ms
+	- experiment: 
+		number: 2
+		input_data:
+			buffer_size: 64KB
+		results:
+			duration: 8.88ms
+	- experiment: 
+		number: 3
+		input_data:
+			buffer_size: 128KB
+		results:
+			duration: 16.987ms
+	- experiment: 
+		number: 4
+		input_data:
+			buffer_size: 256KB
+		results:
+			duration: 32.942ms
+	- experiment: 
+		number: 5
+		input_data:
+			buffer_size: 512KB
+		results:
+			duration: 69.278ms
+	- experiment: 
+		number: 6
+		input_data:
+			buffer_size: 1024KB
+		results:
+			duration: 146.854ms
+	- experiment: 
+		number: 7
+		input_data:
+			buffer_size: 2048KB
+		results:
+			duration: 311.655ms
+	- experiment: 
+		number: 8
+		input_data:
+			buffer_size: 4096KB
+		results:
+			duration: 634.547ms
+	- experiment: 
+		number: 9
+		input_data:
+			buffer_size: 8192KB
+		results:
+			duration: 1362.69ms
+	- experiment: 
+		number: 10
+		input_data:
+			buffer_size: 9216KB
+		results:
+			duration: 1618.86ms
 ````
+
+
 
 ![Results](./images/result.jpg)
